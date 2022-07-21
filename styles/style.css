@@ -39,8 +39,8 @@ img {
 }
 
 .wrap {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   max-width: 144rem;
   padding: 5rem 0;
   background-color: var(--red);
@@ -49,9 +49,34 @@ img {
   background-size: cover;
 }
 
+@media (min-width: 768px) {
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("../images/bg-intro-desktop.png");
+  }
+}
+
 .grap__container {
   margin: 0 auto;
   max-width: 40rem;
+}
+
+@media (min-width: 768px) {
+  .grap__container {
+    display: flex;
+    column-gap: 2.5rem;
+    max-width: 76.8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grap__container {
+    column-gap: 6rem;
+    max-width: 105rem;
+  }
 }
 
 .content {
@@ -63,6 +88,21 @@ img {
   color: white;
 }
 
+@media (min-width: 768px) {
+  .content {
+    justify-content: center;
+    padding: 0 2.5rem;
+    padding-right: 0;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    padding: 0;
+  }
+}
+
 .content__title {
   text-align: center;
   margin: 0;
@@ -70,17 +110,51 @@ img {
   font-weight: 700;
 }
 
+@media (min-width: 768px) {
+  .content__title {
+    text-align: left;
+    font-size: 3.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content__title {
+    font-size: 5rem;
+  }
+}
+
 .content__paragraph {
   text-align: center;
   line-height: 1.5;
   margin: 0;
 }
+
+@media (min-width: 768px) {
+  .content__paragraph {
+    text-align: left;
+  }
+}
+
 .wrap--form {
   display: flex;
   flex-direction: column;
   row-gap: 3rem;
   padding: 0 2.5rem;
   margin: 0 0 5rem;
+}
+
+@media (min-width: 768px) {
+  .wrap--form {
+    width: 50%;
+    padding: 0 2.5rem;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrap--form {
+    padding: 0;
+  }
 }
 
 .promotion {
@@ -181,4 +255,20 @@ img {
 
 .form__input--green:hover {
   background-color: var(--hoverGreen);
+}
+
+/* Footer */
+footer {
+  max-width: 144rem;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: var(--red);
+  color: white;
+  padding: 1.5rem 0;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--darkBlue);
 }
