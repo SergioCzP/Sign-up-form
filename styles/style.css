@@ -196,7 +196,11 @@ img {
 
 .form__label {
   display: block;
+  text-align: right;
   width: 100%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--red);
 }
 
 .form__input {
@@ -204,6 +208,7 @@ img {
   width: 100%;
   padding: 2rem;
   font-weight: 600;
+  font-size: 1.6rem;
   border: none;
   border: solid 0.1rem var(--grayishBlue);
   -webkit-border-radius: 1rem;
@@ -248,6 +253,14 @@ img {
   color: var(--red);
 }
 
+.warning {
+  margin-bottom: 0.5rem;
+  border: solid 0.25rem var(--red);
+  background-image: url(../images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+
 .form__input:focus-visible {
   outline: none;
   border: solid 0.1rem var(--blue);
@@ -255,6 +268,10 @@ img {
 
 .form__input--green:hover {
   background-color: var(--hoverGreen);
+}
+
+.warning#email::placeholder {
+  color: var(--red);
 }
 
 /* Footer */
