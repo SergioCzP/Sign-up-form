@@ -54,7 +54,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: 105vh;
     background-image: url("../images/bg-intro-desktop.png");
   }
 }
@@ -216,6 +216,7 @@ img {
   border-radius: 1rem;
 
   transition: border 0.5s;
+  transition: margin 0.5s;
 }
 
 .form__input--green {
